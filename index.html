@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+      .art-1{
+        color: red;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: aquamarine;
+        border-radius: 20px;
+        border: 5px solid black;
+        margin-bottom: 20px;
+      }
+
+      .sec-1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        border: 5px solid red;
+      }
+      @media only screen and (min-width: 600px){
+        .container-article {width : 9%}
+        .container-p {width : 9%}
+      }
+      
+        @media only screen and (min-width: 480px){
+        .container-article {width : 80%}
+        .container-p {width : 80%}
+      
+      }
+      @media only screen and (min-width: 768px){
+        .container-article {width : 90%}
+        .container-p {width : 90%}
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navigasi">
+      <a href="/html/">HTML</a> |
+      <a href="/css/">CSS</a> |
+      <a href="/js/">JavaScript</a> |
+      <a href="/jquery/">jQuery</a>
+    </nav>
+
+    <article class="art-1">
+      <!-- ini contoh penggunaan style inline css -->
+      <h1 style="color: blue; font-family: 'Times New Roman', Times, serif;">Most Popular Browsers</h1>
+      <article class="container-article">
+        <h2>Google Chrome</h2>
+        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+      </article>
+    </article>
+
+    <section class="sec-1">
+      <h1>WWF</h1>
+      <p class=" container-p">The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, 
+        research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+    </section>
+  </body>
+</html>
